@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+  <h1>Website</h1>
+  <p>홈페이지에 오신 걸 환영합니다</p>
+  <p>저희 홈페이지는 고객 만족을 위해 최선을 다하겠습니다</p>
+  <footer>Copyright Website</footer>    <!-- main 브랜치 작업을 남김 -->
+  <nav>Navigation Menu</nav>    <!-- feature 브랜치 작업도 남김 --->
+</body>
+</html>
