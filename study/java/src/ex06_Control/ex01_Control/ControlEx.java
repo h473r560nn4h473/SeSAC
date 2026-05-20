@@ -1,3 +1,5 @@
+package ex06_Control.ex01_Control;
+
 public class ControlEx {
   public static void main(String[] args) {
     {

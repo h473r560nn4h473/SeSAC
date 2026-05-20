@@ -1,3 +1,5 @@
+package ex05_Operators.ex01_Operators;
+
 public class OperatorsEx {
   public static void main(String[] args) {
     {

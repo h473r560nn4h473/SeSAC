@@ -1,3 +1,5 @@
+package ex04_Variables.practice;
+
 public class Practice {
   public static void main(String[] args) {
     String name = "Jane Doe";

@@ -1,3 +1,5 @@
+package ex06_Control.practice;
+
 public class Practice {
   public static void main(String[] args) {
     {

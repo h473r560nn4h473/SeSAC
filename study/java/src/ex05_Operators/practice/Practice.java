@@ -1,3 +1,5 @@
+package ex05_Operators.practice;
+
 public class Practice {
   public static void main(String[] args) {
     {

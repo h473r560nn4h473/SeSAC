@@ -1,3 +1,5 @@
+package ex04_Variables.ex01_Variables;
+
 public class VariableEx {
   public static void main(String[] args) {
     // 6가지 기본 타입 (boolean, byte, int, long, double, char)
