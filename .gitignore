@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,java
 
-### [★ 중요 추가] 내 프로젝트 맞춤형 차단 설정 ###
-# 어느 폴더 깊숙이 있든 bin과 .vscode 폴더 전체를 무시합니다.
 **/bin/
 **/.vscode/
 
@@ -33,7 +31,6 @@ hs_err_pid*
 replay_pid*
 
 ### VisualStudioCode ###
-# 기존 .vscode/* 와 .bin 설정을 상단의 **/ 기호가 더 완벽하게 대체하므로 그대로 두거나 참고용으로 유지합니다.
 .history/
 *.vsix
 
