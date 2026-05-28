@@ -19,6 +19,7 @@ public class Main {
         a = sc.nextInt();
         System.out.println("두 번째 숫자 입력");
         b = sc.nextInt();
+        sc.close();
   
         System.out.println("몫:" + (a / b) + ", 나머지:" + (a % b));
       } catch (ArithmeticException e) {

@@ -39,6 +39,8 @@ public class ArrayEx {
       System.out.println(alphabet[i]);
     }
 
+    sc.close();
+
     // 정적 초기화(배열 선언 시에만 가능한 초기화)
     String[] seasons = { "봄", "여름", "가을", "겨울" };
     // for(요소 : 배열) {}

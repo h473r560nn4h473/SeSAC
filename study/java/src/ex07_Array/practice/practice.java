@@ -73,6 +73,20 @@ public class practice {
     }
 
     {
+      int number = (int) (Math.random() * 100 + 1);
+      System.out.println("십진수: " + number);
+      int halfNumber = number;
+      int count = 0;
+      while (halfNumber > 0) {
+        halfNumber /= 2;
+        count++;
+      }
+      int[] binary = new int[count];
+      for (int i = binary.length - 1; i >= 0; i--) {
+        binary[i] = number % 2;
+        number /= 2;
+      }
+      System.out.println(Arrays.toString(binary));
     }
 
     {
@@ -89,9 +103,39 @@ public class practice {
     }
 
     {
+      String gugudan[][] = new String[8][9];
+      for (int i = 0; i < gugudan.length; i++) {
+        for (int j = 0; j < gugudan[i].length; j++) {
+          gugudan[i][j] = String.format("%dx%d=%d", i + 2, j + 1, (i + 2) * (j + 1));
+        }
+      }
+      for (int i = 0; i < gugudan.length; i++) {
+        for (int j = 0; j < gugudan[i].length; j++) {
+          System.out.println(gugudan[i][j]);
+        }
+      }
     }
 
     {
+      int[][] T = {
+          { 1, 1, 1, 1, 1 },
+          { 0, 0, 1, 0, 0 },
+          { 0, 0, 1, 0, 0 },
+          { 0, 0, 1, 0, 0 },
+          { 0, 0, 1, 0, 0 },
+      };
+
+      for (int i = 0; i < T.length; i++) {
+        for (int j = T[i].length - 1; j >= 0; j--) {
+          int temp = T[i][j];
+          T[i][j] = T[j][i];
+          T[j][i] = temp;
+        }
+      }
+
+      for (int i = 0; i < T.length; i++) {
+        System.out.println(Arrays.toString(T[i]));
+      }
     }
   }
 }
