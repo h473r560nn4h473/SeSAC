@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS db_ddl;
+
+USE db_ddl;
+
+DROP TABLE IF EXISTS customers;
+
+CREATE TABLE customers (
+    cust_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cust_name VARCHAR(30) NOT NULL,
+    phone VARCHAR(30) UNIQUE,
+    age SMALLINT CHECK(age BETWEEN 0 AND 100),
+    join_dt DATE DEFAULT (CURRENT_DATE)
+);

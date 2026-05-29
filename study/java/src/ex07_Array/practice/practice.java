@@ -125,15 +125,22 @@ public class practice {
           { 0, 0, 1, 0, 0 },
       };
 
+      int[][] tempArr = new int[5][5];
+
       for (int i = 0; i < T.length; i++) {
         for (int j = T[i].length - 1; j >= 0; j--) {
-          int temp = T[i][j];
-          T[i][j] = T[j][i];
-          T[j][i] = temp;
+          tempArr[i][j] = T[j][i];
         }
       }
 
       for (int i = 0; i < T.length; i++) {
+        int temp = tempArr[i][0];
+        tempArr[i][0] = tempArr[i][4];
+        tempArr[i][4] = temp;
+      }
+
+      T = tempArr;
+      for (int i = 0; i < tempArr.length; i++) {
         System.out.println(Arrays.toString(T[i]));
       }
     }
